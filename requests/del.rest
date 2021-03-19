@@ -1,14 +1,27 @@
-DELETE http://localhost:3001/api/persons/7
+DELETE http://localhost:3001/api/persons/605465bd0d597231300a3d65
 
 ###
 GET http://localhost:3001/api/persons
-
 
 ###
 POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
+    "name": "Arsa",
+    "number": "09981"
+}
+
+
+###
+
+PUT http://localhost:3001/api/persons/605459d497e421191cf98789
+Content-Type: application/json
+
+{
     "name": "Arto Hellas",
     "number": "09981927132"
 }
+
+### getting info 
+GET http://localhost:3001/
